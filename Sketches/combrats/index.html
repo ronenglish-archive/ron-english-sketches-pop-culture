@@ -218,7 +218,45 @@ flex:0 1 min(100%,320px)!important;max-width:320px!important}
   .gallery-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
   .gallery-grid > .index-card,.gallery-grid > .group-card,.gallery-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
 </style>
-</head>
+
+<style id="ron-four-across-v3">
+/* ron-four-across-v3 */
+.gallery-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+}
+.gallery-grid > .gallery-item{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  flex:0 1 calc(25% - 28px)!important;
+  width:calc(25% - 28px)!important;
+  max-width:calc(25% - 28px)!important;
+}
+@media(max-width:900px){
+  .gallery-grid > .gallery-item{
+    flex-basis:calc(33.333% - 24px)!important;
+    width:calc(33.333% - 24px)!important;
+    max-width:calc(33.333% - 24px)!important;
+  }
+}
+@media(max-width:680px){
+  .gallery-grid > .gallery-item{
+    flex-basis:calc(50% - 18px)!important;
+    width:calc(50% - 18px)!important;
+    max-width:calc(50% - 18px)!important;
+  }
+}
+@media(max-width:440px){
+  .gallery-grid > .gallery-item{
+    flex-basis:100%!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+}
+</style></head>
 <body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a></nav><header class="page-header"><h1 class="page-title">Combrats</h1></header><section class="gallery-grid">
 <a class="gallery-item" href="combrat-element.html">
 <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Combrat%20Element%20COLOR.jpg" alt="Combrat Element" loading="lazy">
