@@ -23,7 +23,7 @@
     .section-card h2{ margin:0 0 14px; font-size:1.4rem; text-align:center; }
     .section-intro{ margin:0 0 18px; color:var(--muted); line-height:1.6; text-align:center; }
     .index-grid{ margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; justify-items:center; }
-    .gallery-grid,.originals-grid,.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; justify-items:center; }
+    .gallery-grid,.originals-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; justify-items:center; }
     .gallery-item{ width:100%; display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,.04); margin:0; transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease; text-align:center; }
     .gallery-item:hover{ transform:translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.12); border-color:#d1d5db; }
     .gallery-item a{ display:block; color:inherit; text-decoration:none; text-align:center; }
@@ -31,15 +31,14 @@
     .index-grid .gallery-item img{ height:240px; padding:10px; border-bottom:1px solid var(--border); }
     .originals-grid .gallery-item img{ height:420px; }
     .gallery-grid .gallery-item img{ height:320px; }
-    .card-grid .gallery-item img{ height:420px; }
-    .file-placeholder{ min-height:220px; display:flex; align-items:center; justify-content:center; text-align:center; background:var(--panel); color:var(--muted); padding:18px; font-weight:600; }
+.file-placeholder{ min-height:220px; display:flex; align-items:center; justify-content:center; text-align:center; background:var(--panel); color:var(--muted); padding:18px; font-weight:600; }
     .entry-body{ width:100%; padding:16px 18px 18px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
     .work-title{ margin:0 auto; padding:0; width:100%; font-size:18px; line-height:1.35; font-weight:600; text-align:center; }
     .back-link{ margin-top:28px; text-align:left; }
     .back-link a{ display:inline-block; text-decoration:none; color:#111; border:1px solid var(--border); border-radius:999px; padding:10px 16px; background:#fff; text-align:left; }
     .back-link a:hover{ background:#f9fafb; }
     footer{ margin-top:34px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
-    @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .index-grid,.gallery-grid,.originals-grid,.card-grid{ grid-template-columns:1fr; } .index-grid .gallery-item img{ height:240px; } .originals-grid .gallery-item img{ height:340px; } .gallery-grid .gallery-item img{ height:280px; } .card-grid .gallery-item img{ height:340px; } }
+    @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .index-grid,.gallery-grid,.originals-grid{ grid-template-columns:1fr; } .index-grid .gallery-item img{ height:240px; } .originals-grid .gallery-item img{ height:340px; } .gallery-grid .gallery-item img{ height:280px; }}
   </style>
   <style id="sketches-global-centering-and-image-fix">
     /* Global repair: center image captions/text and prevent index thumbnails from cropping. */
@@ -149,6 +148,58 @@
 <style id="sketches-index-centered-final-row-v2">
   .gallery-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
   .gallery-grid > .index-card,.gallery-grid > .group-card,.gallery-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
+
+/* RON CARD SIZING NORMALIZATION START */
+.section-card .gallery-grid .gallery-item{
+  display:block;
+  flex:0 1 290px !important;
+  max-width:300px !important;
+  width:100%;
+}
+
+.section-card .gallery-grid .gallery-item img{
+  display:block;
+  width:100%;
+  height:310px !important;
+  max-height:none !important;
+  object-fit:contain;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+.section-card .originals-grid .gallery-item{
+  display:block;
+  flex:0 1 900px !important;
+  max-width:900px !important;
+  width:100%;
+}
+
+.section-card .originals-grid .gallery-item img{
+  display:block;
+  width:100%;
+  height:460px !important;
+  max-height:none !important;
+  object-fit:contain;
+}
+
+@media(max-width:620px){
+  .wrap{padding:22px 14px 48px;}
+
+  .section-card .gallery-grid .gallery-item{
+    flex-basis:min(100%,330px) !important;
+    max-width:330px !important;
+  }
+
+  .section-card .originals-grid .gallery-item{
+    flex-basis:min(100%,900px) !important;
+    max-width:900px !important;
+  }
+
+  .section-card .originals-grid .gallery-item img{
+    height:340px !important;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
 </style>
 </head>
 <body>
