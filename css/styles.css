@@ -414,3 +414,14 @@ main,
   height: 42px;
   border-radius: 999px;
 }
+
+/* RON METADATA CENTERING START */
+.catalogue-meta-block {
+  width: 100%;
+  text-align: center;
+}
+
+.catalogue-meta-block .work-meta {
+  text-align: center;
+}
+/* RON METADATA CENTERING END */
