@@ -141,9 +141,8 @@ main.wrap > section.section-card[data-role="digital"] > .gallery-grid > a.galler
 }
 </style>
 
-<style id="ron-trump-video-rebuilt-visible-card-v3">
-/* Rebuilt card -- intentionally NOT using legacy .ron-video-entry/.video-embed.
-   White outer section, gray rounded 300px card, visibly clipped linked GIF. */
+<style id="ron-trump-video-rebuilt-visible-card-v4">
+/* Same approved rounded gray card, but make the animated figure noticeably larger inside it. */
 main.wrap > section.section-card[data-role="videos"] {
   box-sizing:border-box!important;display:block!important;
   width:100%!important;max-width:960px!important;
@@ -172,7 +171,9 @@ main.wrap > section.section-card[data-role="videos"] .ron-trump-gif-card {
 main.wrap > section.section-card[data-role="videos"] .ron-trump-gif-card > a.ron-trump-gif-link {
   box-sizing:border-box!important;display:flex!important;
   align-items:center!important;justify-content:center!important;
-  width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;
+  width:190px!important;height:284px!important;
+  min-width:0!important;min-height:0!important;
+  max-width:100%!important;max-height:100%!important;
   margin:0!important;padding:0!important;
   background:#f3f4f6!important;border:0!important;
   border-radius:12px!important;overflow:hidden!important;box-shadow:none!important;
@@ -180,12 +181,12 @@ main.wrap > section.section-card[data-role="videos"] .ron-trump-gif-card > a.ron
 }
 main.wrap > section.section-card[data-role="videos"] .ron-trump-gif-card > a.ron-trump-gif-link > img {
   box-sizing:border-box!important;display:block!important;
-  width:100%!important;height:100%!important;
-  max-width:100%!important;max-height:100%!important;
-  object-fit:contain!important;object-position:center center!important;
+  width:auto!important;height:145%!important;
+  max-width:none!important;max-height:none!important;
+  object-fit:unset!important;object-position:center center!important;
   margin:0!important;padding:0!important;
   border:0!important;border-radius:12px!important;
-  background:#f3f4f6!important;
+  background:transparent!important;
 }
 @media(max-width:620px) {
   main.wrap > section.section-card[data-role="videos"]{padding:14px!important;}
