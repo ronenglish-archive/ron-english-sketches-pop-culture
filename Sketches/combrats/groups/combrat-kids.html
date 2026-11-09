@@ -11,195 +11,106 @@
 
 <!-- COMBRATS-SET-HUB-Combrat Kids -->
 
-<style>
-:root{
---border:#e5e7eb;
---muted:#6b7280;
---shadow:0 8px 26px rgba(0,0,0,.06);
---panel:#f3f4f6
+<style id="combrat-kids-compact-overview-v1">
+/* Combrat Kids group overview: compact, centered artwork cards. */
+:root {
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --shadow: 0 8px 26px rgba(0, 0, 0, .06);
+  --panel: #f3f4f6;
 }
-
-*{
-box-sizing:border-box
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
 }
-
-body{
-margin:0;
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-color:#111;
-background:#fff;
-text-align:center
+.wrap { width: 100%; max-width: 760px; margin: 0 auto; padding: 24px 18px 44px; }
+.nav-pills, .sequence-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
 }
-
-.wrap{
-max-width:1120px;
-margin:0 auto;
-padding:28px 18px 56px
+.nav-pill, .sequence-pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  text-decoration: none;
 }
-
-.nav-pills,
-.sequence-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-align-items:center;
-gap:10px;
-margin:20px 0
+.page-title {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
 }
-
-.nav-pill,
-.sequence-pill{
-display:inline-block;
-padding:8px 14px;
-border-radius:999px;
-border:1px solid var(--border);
-background:#fff;
-color:#111;
-text-decoration:none;
-font-size:14px
+/* Retain the approved Combrats group panel and its existing section class. */
+section.section-card.ron-combrats-group-panel-20261027 {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 24px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--shadow);
 }
-
-.page-title{
-margin:0 0 22px;
-font-size:clamp(2rem,4vw,3rem);
-line-height:1.05
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
 }
-
-.hero-card,
-.section-card{
-border:1px solid var(--border);
-border-radius:18px;
-box-shadow:var(--shadow);
-padding:22px;
-margin-bottom:24px;
-background:#fff
+.gallery-item {
+  display: block;
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
 }
-
-.hero-image{
-display:block;
-max-width:900px;
-width:100%;
-max-height:520px;
-object-fit:contain;
-margin:0 auto;
-background:var(--panel);
-border-radius:14px;
-padding:8px
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 158px;
+  padding: 6px;
+  background: var(--panel);
+  object-fit: contain;
 }
-
-.section-card h2{
-margin:0 0 18px;
-font-size:1.4rem
+.entry-body { padding: 10px 9px 12px; text-align: center; }
+.work-title { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.3; }
+.work-id { margin: 0; font-size: 13px; color: var(--muted); }
+/* Preserve centered bottom Previous/Next links; hide only existing spacer elements. */
+nav.ron-bottom-prev-next-center { justify-content: center; gap: 12px; }
+nav.ron-bottom-prev-next-center .sequence-spacer { display: none; }
+nav.ron-bottom-prev-next-center > a { flex: 0 1 auto; }
+footer {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
 }
-
-.gallery-grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-align-items:stretch;
-gap:18px
+@media (max-width: 600px) {
+  .wrap { padding: 20px 12px 36px; }
+  section.section-card.ron-combrats-group-panel-20261027 { padding: 14px; }
+  .gallery-grid { gap: 12px; }
+  .gallery-item { flex-basis: 145px; width: 145px; }
+  .gallery-item img { height: 140px; }
+  .work-title { font-size: 14px; }
 }
-
-.gallery-item{
-display:block;
-flex:0 1 260px;
-max-width:300px;
-width:100%;
-border:1px solid var(--border);
-border-radius:18px;
-overflow:hidden;
-background:#fff;
-text-decoration:none;
-color:#111
-}
-
-.gallery-item img{
-display:block;
-width:100%;
-height:260px;
-object-fit:contain;
-background:var(--panel);
-padding:6px
-}
-
-.entry-body{
-padding:12px 12px 14px;
-text-align:center
-}
-
-.work-title{
-margin:0 0 5px;
-font-size:17px;
-font-weight:600;
-line-height:1.3
-}
-
-.work-id{
-margin:0;
-font-size:13px;
-color:var(--muted)
-}
-
-footer{
-margin-top:30px;
-padding-top:16px;
-border-top:1px solid var(--border);
-color:var(--muted);
-font-size:14px
-}
-
-body,
-main,
-div,
-section,
-header,
-nav,
-footer,
-h1,
-h2,
-h3,
-p,
-a,
-span{
-text-align:center!important
-}
-
-@media(max-width:700px){
-.gallery-item{
-flex-basis:320px;
-max-width:320px
-}
-
-.gallery-item img{
-height:300px
-}
-
-.hero-image{
-max-height:360px
-}
-}
-</style>
-<style id="ron-bottom-prev-next-center-v1">
-/* Ron catalogue: center bottom Previous / Next navigation as a group. */
-nav.ron-bottom-prev-next-center{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:12px!important;
-  text-align:center!important;
-}
-nav.ron-bottom-prev-next-center .sequence-spacer{
-  display:none!important;
-}
-nav.ron-bottom-prev-next-center > a{
-  flex:0 1 auto!important;
-}
-</style><style id="ron-combrats-group-panel-20261027">
-/* Approved Combrats member/gallery panel; only the three user-selected pages. */
-section.ron-combrats-group-panel-20261027{box-sizing:border-box;width:100%;max-width:1120px;margin:0 auto 24px;padding:22px;border:1px solid #e5e7eb;border-radius:18px;background:#fff;box-shadow:0 8px 26px rgba(0,0,0,.06)}
-section.ron-combrats-group-panel-20261027 > .group-grid,section.ron-combrats-group-panel-20261027 > .member-grid,section.ron-combrats-group-panel-20261027 > .index-grid,section.ron-combrats-group-panel-20261027 > .gallery-grid{width:100%;}
-@media(max-width:600px){section.ron-combrats-group-panel-20261027{padding:14px}}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
