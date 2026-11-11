@@ -27,6 +27,14 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
 footer a{color:inherit}
 @media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
+
+/* RON SET PAGE 200x200 CARD GEOMETRY - 2026-11-11; artwork panels only. */
+.section-card{box-sizing:border-box!important;width:100%!important;max-width:560px!important;margin-left:auto!important;margin-right:auto!important}
+.section-card>.index-grid,.section-card>.group-grid,.section-card .index-grid,.section-card .group-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:16px!important}
+.section-card .index-grid>.index-card,.section-card .group-grid>.group-card{box-sizing:border-box!important;display:flex!important;flex:0 0 200px!important;width:200px!important;max-width:200px!important;min-width:0!important;height:200px!important;max-height:200px!important;flex-direction:column!important;overflow:hidden!important}
+.section-card .index-grid>.index-card>img,.section-card .group-grid>.group-card>img{box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;min-height:0!important;height:0!important;max-width:100%!important;max-height:none!important;object-fit:contain!important;padding:8px!important}
+.section-card .index-grid>.index-card>.card-title,.section-card .index-grid>.index-card>.index-title,.section-card .group-grid>.group-card>.label,.section-card .group-grid>.group-card>.card-title{box-sizing:border-box!important;flex:0 0 auto!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:6px 7px 8px!important;font-size:13px!important;line-height:1.25!important;text-align:center!important;overflow-wrap:anywhere!important}
+@media(max-width:480px){.section-card{padding:12px!important}.section-card .index-grid>.index-card,.section-card .group-grid>.group-card{flex:0 0 200px!important;width:200px!important;max-width:200px!important;height:200px!important}.section-card .index-grid>.index-card>img,.section-card .group-grid>.group-card>img{height:0!important;max-height:none!important}}
 </style>
 
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
