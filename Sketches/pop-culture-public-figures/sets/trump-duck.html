@@ -1,504 +1,73 @@
-!doctype html>
+<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Trump Duck | Sketches &amp; Drawings | Ron English Catalogue Raisonne</title>
-
-<style>
-:root{--border:#e5e7eb;--muted:#6b7280;--shadow:0 8px 26px rgba(0,0,0,.06);--panel:#f3f4f6}
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+<style>/* Ron English Sets & Groups — owner-approved consolidated presentation */
+:root{--set-border:#e5e7eb;--set-image-bg:#f8fafc;--set-muted:#6b7280}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 56px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
+html,body{margin:0;background:#fff;color:#111}
+body{font:400 14px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.wrap{width:calc(100% - 24px);max-width:700px;margin:0 auto;padding:26px 0 48px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
+.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--set-border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
+.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
 .page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
-.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:34px;max-width:1050px;margin:0 auto 32px}
-.group-card{display:block;flex:0 1 300px;max-width:315px;width:100%;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
-.group-card img{display:block;width:100%;height:315px;object-fit:contain;background:var(--panel);padding:6px}
-.group-card .label{padding:12px;text-align:center;font-weight:600}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-</style>
-<style id="ron-bottom-prev-next-center-v1">
-/* Ron catalogue: center bottom Previous / Next navigation as a group. */
-nav.ron-bottom-prev-next-center{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:12px!important;
-  text-align:center!important;
-}
-nav.ron-bottom-prev-next-center .sequence-spacer{
-  display:none!important;
-}
-nav.ron-bottom-prev-next-center > a{
-  flex:0 1 auto!important;
-}
-</style>
-<style id="ron-ancillary-media-v1">
-.ron-ancillary-media{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px rgba(0,0,0,.06);padding:22px;margin:0 0 24px;text-align:center}
-.ron-ancillary-media h2{margin:0 0 16px;font-size:1.4rem;text-align:center}
-.ron-ancillary-media .ron-media-wrap{max-width:900px;margin:0 auto}
-.ron-ancillary-media a{display:block;text-decoration:none}
-.ron-ancillary-media img,.ron-ancillary-media video{display:block;width:100%;max-width:900px;max-height:600px;object-fit:contain;margin:0 auto;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:16px}
-.ron-ancillary-media .ron-media-note{max-width:900px;margin:14px auto 0;line-height:1.65;text-align:center}
-</style><style id="ron-compact-ancillary-media-v1">.ron-ancillary-media .ron-media-wrap{width:100%!important;max-width:320px!important;margin-left:auto!important;margin-right:auto!important}.ron-ancillary-media .ron-media-wrap img,.ron-ancillary-media .ron-media-wrap video{display:block!important;width:100%!important;max-width:320px!important;height:auto!important;margin:0 auto!important}</style><style id="ron-standalone-video-panels-v1">
-/* Independent 960px Videos SECTION PANEL; three centered video TILES on desktop. */
-main.wrap > section.section-card[data-role="videos"] {
-  box-sizing:border-box!important; width:100%!important; max-width:960px!important;
-  margin-left:auto!important; margin-right:auto!important;
-  padding:22px!important; border:1px solid #e5e7eb!important;
-  border-radius:18px!important; background:#fff!important;
-  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
-}
-section.section-card[data-role="videos"] > h2 { text-align:center; }
-section.section-card[data-role="videos"] .ron-video-grid {
-  display:flex!important; flex-wrap:wrap!important; justify-content:center!important;
-  align-items:stretch!important; gap:18px!important; width:100%!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry {
-  box-sizing:border-box!important; display:flex!important; flex:0 1 290px!important;
-  flex-direction:column!important; align-items:center!important; justify-content:center!important;
-  min-width:0!important; width:min(290px,100%)!important; max-width:300px!important;
-  padding:10px!important; border:1px solid #e5e7eb!important; border-radius:16px!important;
-  background:#f3f4f6!important; overflow:hidden!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry > .video-embed {
-  box-sizing:border-box!important; display:flex!important; justify-content:center!important;
-  align-items:center!important; width:100%!important; max-width:100%!important;
-  margin:0 auto!important; aspect-ratio:1/1!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry iframe,
-section.section-card[data-role="videos"] .ron-video-entry video {
-  display:block!important; width:100%!important; max-width:100%!important;
-  max-height:100%!important; border:0!important; margin:auto!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry iframe[style*="9/16"] {
-  width:auto!important; height:100%!important; aspect-ratio:9/16!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry iframe[style*="16/9"] {
-  width:100%!important; height:auto!important; aspect-ratio:16/9!important;
-}
-section.section-card[data-role="videos"] .ron-video-entry > video {
-  max-height:280px!important; aspect-ratio:1/1; object-fit:contain;
-}
-@media(max-width:640px) {
-  section.section-card[data-role="videos"] .ron-video-entry { width:min(300px,100%)!important; }
-}
-</style>
-<style id="ron-trump-duck-graphic-tiles-v1">
-main.wrap > section.ron-trump-duck-graphics-v1{box-sizing:border-box;max-width:960px;width:100%;margin:0 auto 24px;padding:22px;background:#fff}
-.ron-trump-duck-tiles-v1{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px;max-width:940px;margin:0 auto}
-.ron-trump-duck-tile{box-sizing:border-box;flex:0 1 290px;width:min(290px,100%);max-width:300px;margin:0;padding:10px;border:1px solid #e5e7eb;border-radius:16px;background:#f3f4f6;text-align:center}
-.ron-trump-duck-tile a{display:flex;align-items:center;justify-content:center;width:100%;height:290px;text-decoration:none;overflow:hidden}
-.ron-trump-duck-tile img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;margin:auto!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important}
-.ron-trump-duck-tile figcaption{margin:10px 0 0;text-align:center;font-size:14px;line-height:1.45;color:#111}
-@media(max-width:640px){.ron-trump-duck-tile{flex-basis:min(290px,100%)}}
-</style>
-<style id="ron-sketches-videos-unified-v1">
-/* V11 video holders: 960px white panel, compact 300px tiles, grey letterbox. */
-section[data-role="videos"] { box-sizing:border-box!important; width:100%!important; max-width:960px!important; margin:0 auto 24px!important; padding:22px!important; background:#fff!important; border:1px solid #e5e7eb!important; border-radius:18px!important; box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
-section[data-role="videos"] > h2 { text-align:center!important; margin:0 0 16px!important; }
-section[data-role="videos"] .catalogue-video-grid,
-section[data-role="videos"] .ron-video-grid { display:flex!important; flex-wrap:wrap!important; align-items:stretch!important; justify-content:center!important; gap:18px!important; width:100%!important; max-width:100%!important; margin:0 auto!important; }
-section[data-role="videos"] .ancillary-video-card,
-section[data-role="videos"] .ron-video-tile,
-section[data-role="videos"] .ron-video-entry { box-sizing:border-box!important; flex:0 1 300px!important; width:min(300px,100%)!important; min-width:0!important; max-width:300px!important; margin:0!important; padding:0!important; text-align:center!important; background:#fff!important; border:1px solid #e5e7eb!important; border-radius:16px!important; overflow:hidden!important; box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
-/* All media have the same compact square grey field, independently of player aspect. */
-section[data-role="videos"] .ancillary-video-card > div:first-child,
-section[data-role="videos"] .ron-video-tile > .video-embed,
-section[data-role="videos"] .ron-video-entry > .video-embed,
-section[data-role="videos"] .ron-video-entry > div:first-child,
-section[data-role="videos"] .ron-video-tile > div:first-child { box-sizing:border-box!important; position:relative!important; inset:auto!important; display:flex!important; align-items:center!important; justify-content:center!important; width:100%!important; max-width:100%!important; height:300px!important; min-height:300px!important; max-height:300px!important; padding:8px!important; margin:0!important; overflow:hidden!important; background:#f3f4f6!important; }
-section[data-role="videos"] iframe { box-sizing:border-box!important; display:block!important; position:relative!important; inset:auto!important; flex:none!important; width:100%!important; max-width:100%!important; height:auto!important; max-height:284px!important; aspect-ratio:16/9!important; border:0!important; margin:0 auto!important; }
-/* 9:16 portrait iframe: fit it inside the SAME grey square without stretching. */
-section[data-role="videos"] iframe[style*="9/16"],
-section[data-role="videos"] iframe[style*="9 / 16"] { aspect-ratio:9/16!important; height:284px!important; width:159.75px!important; max-width:100%!important; }
-section[data-role="videos"] video { box-sizing:border-box!important; position:relative!important; inset:auto!important; display:block!important; width:100%!important; height:284px!important; max-height:284px!important; object-fit:contain!important; background:#f3f4f6!important; }
-section[data-role="videos"] .ancillary-video-card > p,
-section[data-role="videos"] .ron-video-tile > p,
-section[data-role="videos"] .ron-video-entry > p { margin:0!important; padding:12px!important; text-align:center!important; background:#fff!important; }
-@media(max-width:620px) {section[data-role="videos"]{padding:14px!important;}section[data-role="videos"] .ancillary-video-card,section[data-role="videos"] .ron-video-tile,section[data-role="videos"] .ron-video-entry{max-width:100%!important;}}
-</style>
-
-<style id="ron-sketches-wrapped-video-card-surface-v3">
-/* Only video tiles, NEVER the large white Videos panel. */
-section[data-role="videos"] .ron-video-grid > .ron-video-entry,
-section[data-role="videos"] .catalogue-video-grid > .ron-video-entry,
-section[data-role="videos"] .ron-video-grid > .ron-video-tile,
-section[data-role="videos"] .catalogue-video-grid > .ron-video-tile,
-section[data-role="videos"] .ron-video-grid > .ancillary-video-card,
-section[data-role="videos"] .catalogue-video-grid > .ancillary-video-card {
-  box-sizing:border-box!important;
-  flex:0 1 300px!important;
-  width:300px!important;
-  min-width:0!important;
-  max-width:100%!important;
-  margin:0!important;
-  text-align:center!important;
-  border:1px solid #e5e7eb!important;
-  border-radius:16px!important;
-  overflow:hidden!important;
-  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
-}
-/* Inner letterbox surface where a wrapper already contains a media div. */
-section[data-role="videos"] .ron-video-entry > div:first-child,
-section[data-role="videos"] .ron-video-tile > div:first-child,
-section[data-role="videos"] .ancillary-video-card > div:first-child {
-  box-sizing:border-box!important;
-  position:relative!important;
-  inset:auto!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:100%!important;
-  max-width:100%!important;
-  height:300px!important;
-  min-height:300px!important;
-  max-height:300px!important;
-  padding:8px!important;
-  margin:0!important;
-  overflow:hidden!important;
-  background:#f3f4f6!important;
-}
-/* Direct HTML5 players have no intervening div: add their gray square HERE. */
-section[data-role="videos"] .ron-video-entry > video,
-section[data-role="videos"] .ron-video-tile > video,
-section[data-role="videos"] .ancillary-video-card > video {
-  box-sizing:border-box!important;
-  display:block!important;
-  position:relative!important;
-  inset:auto!important;
-  width:100%!important;
-  max-width:100%!important;
-  height:300px!important;
-  min-height:300px!important;
-  max-height:300px!important;
-  padding:8px!important;
-  margin:0!important;
-  object-fit:contain!important;
-  background:#f3f4f6!important;
-}
-/* For direct iframes, provide the same background, corner clipping, and padding. */
-section[data-role="videos"] .ron-video-entry > iframe,
-section[data-role="videos"] .ron-video-tile > iframe,
-section[data-role="videos"] .ancillary-video-card > iframe {
-  box-sizing:border-box!important;
-  display:block!important;
-  position:relative!important;
-  inset:auto!important;
-  max-width:100%!important;
-  max-height:300px!important;
-  padding:8px!important;
-  margin:0 auto!important;
-  background:#f3f4f6!important;
-}
-section[data-role="videos"] .ron-video-entry > p,
-section[data-role="videos"] .ron-video-tile > p,
-section[data-role="videos"] .ancillary-video-card > p {
-  margin:0!important;
-  padding:12px!important;
-  background:#fff!important;
-  text-align:center!important;
-}
-</style>
-<style id="ron-drawings-documentary-category-panels-v1">
-/* Category panels are distinct; each supporting item has its own compact card. */
-section.ron-drawing-documentation-category { box-sizing:border-box!important;display:block!important;width:100%!important;max-width:960px!important;margin:0 auto 24px!important;padding:22px!important;background:#fff!important;border:1px solid #e5e7eb!important;border-radius:18px!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
-section.ron-drawing-documentation-category > h2 { text-align:center!important;margin:0 0 18px!important; }
-section.ron-drawing-documentation-category .ron-doc-category-items { display:flex!important;flex-wrap:wrap!important;align-items:stretch!important;justify-content:center!important;gap:18px!important;max-width:920px!important;margin:0 auto!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item { box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 220px!important;width:220px!important;max-width:100%!important;min-width:0!important;margin:0!important;border:1px solid #e5e7eb!important;border-radius:13px!important;overflow:hidden!important;background:#fff!important;box-shadow:none!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > a { box-sizing:border-box!important;display:flex!important;justify-content:center!important;align-items:center!important;min-height:230px!important;width:100%!important;padding:10px!important;margin:0!important;background:#f7f8fa!important;border:0!important;text-decoration:none!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > a img { display:block!important;max-width:100%!important;width:auto!important;height:auto!important;max-height:220px!important;object-fit:contain!important;margin:auto!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > figcaption { box-sizing:border-box!important;padding:11px 12px!important;text-align:center!important;font-size:.88rem!important;line-height:1.45!important;overflow-wrap:anywhere!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > figcaption a { display:inline!important;padding:0!important;border:0!important;background:none!important;text-decoration:underline!important; }
-section.ron-drawing-documentation-category .ron-doc-category-note {text-align:center!important;margin:12px auto 0!important;max-width:780px!important;}
-@media(max-width:580px) {section.ron-drawing-documentation-category{padding:14px!important}section.ron-drawing-documentation-category figure.ron-doc-category-item{flex-basis:min(220px,100%)!important}}
-</style><style id="ron-sketches-video-unified-20261020-v1">
-/* Unified video presentation: centered full-width section, centered compact cards. */
-section.section-card[data-role="videos"] {box-sizing:border-box!important;width:100%!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;padding:22px!important;}
-section.section-card[data-role="videos"] > h2 {text-align:center!important;}
-section.section-card[data-role="videos"] .catalogue-video-grid,
-section.section-card[data-role="videos"] .ron-video-grid {box-sizing:border-box!important;display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important;width:100%!important;max-width:100%!important;margin:0 auto!important;}
-section.section-card[data-role="videos"] .catalogue-video-grid > .ancillary-video-card,
-section.section-card[data-role="videos"] .catalogue-video-grid > .video-embed,
-section.section-card[data-role="videos"] .catalogue-video-grid > .ron-video-entry,
-section.section-card[data-role="videos"] .ron-video-grid > .ancillary-video-card,
-section.section-card[data-role="videos"] .ron-video-grid > .video-embed,
-section.section-card[data-role="videos"] .ron-video-grid > .ron-video-entry {box-sizing:border-box!important;flex:0 1 300px!important;width:min(300px,100%)!important;min-width:0!important;max-width:300px!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;align-items:center!important;padding:10px!important;text-align:center!important;background:#f3f4f6!important;border:1px solid #e5e7eb!important;border-radius:14px!important;overflow:hidden!important;}
-section.section-card[data-role="videos"] .video-embed,
-section.section-card[data-role="videos"] .ancillary-video-card > div:first-child,
-section.section-card[data-role="videos"] .ron-video-entry > .video-embed {box-sizing:border-box!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;padding:0!important;margin:0!important;position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;background:transparent!important;}
-section.section-card[data-role="videos"] a.ron-video-poster {box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important;inset:auto!important;width:100%!important;max-width:100%!important;height:220px!important;min-height:0!important;max-height:220px!important;aspect-ratio:auto!important;padding:0!important;margin:0 auto!important;background:#e9ecef!important;border-radius:10px!important;overflow:hidden!important;}
-section.section-card[data-role="videos"] a.ron-video-poster img {display:block!important;max-width:100%!important;width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important;}
-section.section-card[data-role="videos"] .ron-video-watch-label {display:block!important;position:static!important;box-sizing:border-box!important;width:100%!important;max-width:100%!important;margin:8px auto 0!important;padding:0!important;text-align:center!important;font-size:14px!important;line-height:1.4!important;height:auto!important;}
-section.section-card[data-role="videos"] .ron-video-watch-label a {text-decoration:underline!important;}
-section.section-card[data-role="videos"] .ron-video-entry > p,
-section.section-card[data-role="videos"] .ancillary-video-card > p {margin:8px auto 0!important;padding:0!important;text-align:center!important;}
-@media(max-width:620px){section.section-card[data-role="videos"]{padding:14px!important;}section.section-card[data-role="videos"] .catalogue-video-grid > *,section.section-card[data-role="videos"] .ron-video-grid > *{max-width:100%!important;}}
-</style>
-<style id="ron-video-watch-caption-only-20261020-v1">
-/* Owner requested Watch on YouTube as the only caption underneath each thumbnail. */
-section.section-card[data-role="videos"] .catalogue-video-grid,
-section.section-card[data-role="videos"] .ron-video-grid {
-  align-items:stretch!important;justify-content:center!important;
-}
-section.section-card[data-role="videos"] .ron-video-watch-label,
-section.section-card[data-role="videos"] .ron-video-caption,
-section.section-card[data-role="videos"] .ancillary-video-card > p,
-section.section-card[data-role="videos"] .ron-video-entry > p,
-section.section-card[data-role="videos"] .video-embed > p,
-section.section-card[data-role="videos"] .ron-video-youtube-v2 > p {
-  display:block!important;position:static!important;
-  margin:10px auto 2px!important;padding:0!important;
-  width:100%!important;max-width:100%!important;
-  height:auto!important;min-height:0!important;
-  text-align:center!important;font-size:14px!important;line-height:1.45!important;
-  background:transparent!important;border:0!important;box-shadow:none!important;
-}
-section.section-card[data-role="videos"] .ron-video-watch-label a,
-section.section-card[data-role="videos"] .ron-video-caption a,
-section.section-card[data-role="videos"] .ancillary-video-card > p a,
-section.section-card[data-role="videos"] .ron-video-entry > p a,
-section.section-card[data-role="videos"] .video-embed > p a,
-section.section-card[data-role="videos"] .ron-video-youtube-v2 > p a {
-  display:inline!important;position:static!important;
-  width:auto!important;height:auto!important;margin:0!important;
-  padding:0!important;background:transparent!important;
-  border:none!important;border-radius:0!important;
-  box-shadow:none!important;transform:none!important;
-  font:inherit!important;color:inherit!important;
-  text-decoration:underline!important;
-}
-section.section-card[data-role="videos"] .ron-video-youtube-v2 {
-  display:flex!important;flex-direction:column!important;align-items:center!important;
-  width:100%!important;max-width:100%!important;
-}
-</style>
-<style id="ron-yt-figcaption-rebuild-20261020-v2">
-/* Individual video cards with exactly one linked figcaption. This is real rebuilt HTML. */
-section.section-card[data-role="videos"] .ron-yt-clean-grid {
- display:flex!important;flex-wrap:wrap!important;justify-content:center!important;
- align-items:stretch!important;gap:18px!important;width:100%!important;
- max-width:100%!important;margin:0 auto!important;padding:0!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile {
- box-sizing:border-box!important;display:flex!important;flex-direction:column!important;
- align-items:center!important;justify-content:flex-start!important;
- flex:0 1 300px!important;width:min(300px,100%)!important;max-width:300px!important;
- min-width:0!important;height:auto!important;min-height:0!important;
- margin:0!important;padding:10px!important;text-align:center!important;
- background:#f3f4f6!important;border:1px solid #e5e7eb!important;
- border-radius:14px!important;overflow:hidden!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > a.ron-video-poster {
- box-sizing:border-box!important;display:flex!important;position:relative!important;
- align-items:center!important;justify-content:center!important;
- inset:auto!important;width:100%!important;max-width:100%!important;
- height:220px!important;min-height:220px!important;max-height:220px!important;
- margin:0 auto!important;padding:0!important;overflow:hidden!important;
- border-radius:10px!important;background:#e9ecef!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > a.ron-video-poster img {
- display:block!important;width:100%!important;max-width:100%!important;
- height:100%!important;max-height:100%!important;object-fit:contain!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > figcaption {
- display:block!important;position:static!important;box-sizing:border-box!important;
- width:100%!important;height:auto!important;max-width:100%!important;
- min-height:0!important;margin:10px 0 0!important;padding:0!important;
- text-align:center!important;font:normal 14px/1.45 system-ui,sans-serif!important;
- background:transparent!important;border:none!important;box-shadow:none!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > figcaption > a {
- display:inline!important;position:static!important;float:none!important;
- color:inherit!important;background:transparent!important;
- font:inherit!important;text-decoration:underline!important;
- border:none!important;box-shadow:none!important;padding:0!important;margin:0!important;
-}
-@media(max-width:620px){section.section-card[data-role="videos"] .ron-yt-clean-tile{max-width:100%!important;}}
-</style>
-<style id="ron-yt-figcaption-rebuild-20261020-v1">
-/* Individual video cards with exactly one linked figcaption. This is real rebuilt HTML. */
-section.section-card[data-role="videos"] .ron-yt-clean-grid {
- display:flex!important;flex-wrap:wrap!important;justify-content:center!important;
- align-items:stretch!important;gap:18px!important;width:100%!important;
- max-width:100%!important;margin:0 auto!important;padding:0!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile {
- box-sizing:border-box!important;display:flex!important;flex-direction:column!important;
- align-items:center!important;justify-content:flex-start!important;
- flex:0 1 300px!important;width:min(300px,100%)!important;max-width:300px!important;
- min-width:0!important;height:auto!important;min-height:0!important;
- margin:0!important;padding:10px!important;text-align:center!important;
- background:#f3f4f6!important;border:1px solid #e5e7eb!important;
- border-radius:14px!important;overflow:hidden!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > a.ron-video-poster {
- box-sizing:border-box!important;display:flex!important;position:relative!important;
- align-items:center!important;justify-content:center!important;
- inset:auto!important;width:100%!important;max-width:100%!important;
- height:220px!important;min-height:220px!important;max-height:220px!important;
- margin:0 auto!important;padding:0!important;overflow:hidden!important;
- border-radius:10px!important;background:#e9ecef!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > a.ron-video-poster img {
- display:block!important;width:100%!important;max-width:100%!important;
- height:100%!important;max-height:100%!important;object-fit:contain!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > figcaption {
- display:block!important;position:static!important;box-sizing:border-box!important;
- width:100%!important;height:auto!important;max-width:100%!important;
- min-height:0!important;margin:10px 0 0!important;padding:0!important;
- text-align:center!important;font:normal 14px/1.45 system-ui,sans-serif!important;
- background:transparent!important;border:none!important;box-shadow:none!important;
-}
-section.section-card[data-role="videos"] .ron-yt-clean-tile > figcaption > a {
- display:inline!important;position:static!important;float:none!important;
- color:inherit!important;background:transparent!important;
- font:inherit!important;text-decoration:underline!important;
- border:none!important;box-shadow:none!important;padding:0!important;margin:0!important;
-}
-@media(max-width:620px){section.section-card[data-role="videos"] .ron-yt-clean-tile{max-width:100%!important;}}
-</style>
-<style id="ron-set-grid-panel-20261027">
-/* Approved Evil Monkeys-style set/member index panel. */
-section.ron-set-grid-panel-20261027{box-sizing:border-box;width:100%;max-width:1120px;margin:0 auto 24px;padding:22px;border:1px solid #e5e7eb;border-radius:18px;background:#fff;box-shadow:0 8px 26px rgba(0,0,0,.06)}
-section.ron-set-grid-panel-20261027 > .group-grid,section.ron-set-grid-panel-20261027 > .member-grid,section.ron-set-grid-panel-20261027 > .index-grid,section.ron-set-grid-panel-20261027 > .gallery-grid{width:100%;}
-@media(max-width:600px){section.ron-set-grid-panel-20261027{padding:14px}}
-</style>
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-public-figures-botanicals-card-size-standard-v1">
-/* Ron catalogue: normalize Public Figures card grids to the Plants & Botanicals standard.
-   Intentionally excludes .original-grid so primary/original artwork presentations stay large. */
-.wrap{
-  max-width:1120px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-.index-grid,
-.group-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid,
-.gallery-grid:not(.original-grid){
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.group-grid > .index-card,
-.group-grid > .gallery-item,
-.group-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card,
-.gallery-grid:not(.original-grid) > .index-card,
-.gallery-grid:not(.original-grid) > .gallery-item,
-.gallery-grid:not(.original-grid) > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-.index-grid > .index-card > img,
-.index-grid > .index-card .index-image,
-.index-grid > .gallery-item > img,
-.index-grid > .group-card > img,
-.group-grid > .index-card > img,
-.group-grid > .index-card .index-image,
-.group-grid > .gallery-item > img,
-.group-grid > .group-card > img,
-.category-grid > .index-card > img,
-.category-grid > .index-card .index-image,
-.category-grid > .gallery-item > img,
-.category-grid > .group-card > img,
-.subcategories-grid > .index-card > img,
-.subcategories-grid > .index-card .index-image,
-.subcategories-grid > .gallery-item > img,
-.subcategories-grid > .group-card > img,
-.cards-grid > .index-card > img,
-.cards-grid > .index-card .index-image,
-.cards-grid > .gallery-item > img,
-.cards-grid > .group-card > img,
-.gallery-grid:not(.original-grid) > .index-card > img,
-.gallery-grid:not(.original-grid) > .index-card .index-image,
-.gallery-grid:not(.original-grid) > .gallery-item > img,
-.gallery-grid:not(.original-grid) > .group-card > img{
-  width:100%!important;
-  height:240px!important;
-  max-height:240px!important;
-  aspect-ratio:auto!important;
-  object-fit:contain!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .group-grid > .index-card,.group-grid > .gallery-item,.group-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card,
-  .gallery-grid:not(.original-grid) > .index-card,
-  .gallery-grid:not(.original-grid) > .gallery-item,
-  .gallery-grid:not(.original-grid) > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .group-grid > .index-card,.group-grid > .gallery-item,.group-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card,
-  .gallery-grid:not(.original-grid) > .index-card,
-  .gallery-grid:not(.original-grid) > .gallery-item,
-  .gallery-grid:not(.original-grid) > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .group-grid > .index-card,.group-grid > .gallery-item,.group-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card,
-  .gallery-grid:not(.original-grid) > .index-card,
-  .gallery-grid:not(.original-grid) > .gallery-item,
-  .gallery-grid:not(.original-grid) > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
+.page-title,.page-header h1{margin:0;font:500 28px/1.2 Georgia,"Times New Roman",serif;text-align:center}
+.section-card{box-sizing:border-box;width:100%;max-width:680px;margin:0 auto 24px;padding:18px;border:1px solid var(--set-border);border-radius:12px;background:#fff;box-shadow:none}
+.section-card h2{margin:0 0 16px;text-align:center;font:500 20px/1.3 Georgia,"Times New Roman",serif}
+.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card{box-sizing:border-box;display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;height:204px;flex-direction:column;overflow:hidden;border:1px solid var(--set-border);border-radius:12px;background:#fff;color:inherit;text-decoration:none;text-align:center;box-shadow:0 3px 12px #0000000b}
+.index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
+.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;flex:0 0 158px;width:100%;height:158px;min-height:158px;max-height:158px;padding:8px;object-fit:contain;object-position:center;background:var(--set-image-bg);border-bottom:1px solid var(--set-border)}
+.index-grid>.index-card>.index-image,.group-grid>.group-card>.index-image{display:flex;flex:0 0 158px;width:100%;height:158px;min-height:158px;max-height:158px;align-items:center;justify-content:center;padding:8px;background:var(--set-image-bg);border-bottom:1px solid var(--set-border)}
+.index-grid>.index-card>.index-image img,.group-grid>.group-card>.index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
+.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:flex;flex:1 1 auto;min-height:0;flex-direction:column;align-items:center;justify-content:center;margin:0;padding:2px 6px;text-align:center;font:500 14px/1.3 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+.set-caption-label,.set-label{display:block;width:100%;margin-top:1px;color:var(--set-muted);font:400 11px/1.2 Arial,Helvetica,sans-serif;text-align:center}
+footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--set-border);color:var(--set-muted);font-size:14px}
+footer a{color:inherit}
+/* Mixed-page documentary sections retain their own semantic sizing. */
+.gallery-grid,.ron-doc-category-items,.ron-yt-clean-grid,.ron-trump-gif-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
+.section-card[data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 18px;text-align:center;line-height:1.6}
+.section-card[data-role="literature"] .literature-entry p{margin:0 auto 12px;text-align:center}
+.section-card[data-role="literature"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.section-card[data-role="literature"] .gallery-item{display:flex;align-items:center;justify-content:center;width:auto;max-width:200px;max-height:200px;height:auto;flex:0 1 auto;padding:6px;border:1px solid var(--set-border);border-radius:10px;overflow:hidden}
+.section-card[data-role="literature"] .gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:200px;object-fit:contain}
+.section-card[data-role="composite-reference"] .gallery-grid{display:flex;justify-content:center;gap:12px}
+.section-card[data-role="composite-reference"] .gallery-item{display:flex;flex:0 0 200px;width:200px;height:200px;align-items:center;justify-content:center;padding:6px;border:1px solid var(--set-border);border-radius:10px;overflow:hidden}
+.section-card[data-role="composite-reference"] .gallery-item img{display:block;width:100%;height:100%;object-fit:contain}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-item{width:auto;max-width:200px;max-height:200px;flex:0 1 auto;margin:0}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-item img{display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
+.section-card[data-role="videos"] .ron-yt-clean-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.section-card[data-role="videos"] .ron-yt-clean-tile{display:block;position:relative;width:200px;max-width:200px;flex:0 1 200px;margin:0;text-align:center}
+.section-card[data-role="videos"] .ron-yt-clean-tile img{display:block;width:100%;height:auto;max-height:200px;object-fit:contain}
+.section-card[data-role="videos"] .ron-yt-clean-tile [aria-hidden="true"]{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.42);color:#fff;font-size:13px;line-height:1}
+.section-card[data-role="digital"] .gallery-item{display:flex;flex:0 0 200px;width:200px;height:200px;align-items:center;justify-content:center;padding:6px;border:1px solid var(--set-border);border-radius:10px;overflow:hidden}
+.section-card[data-role="full-sketches"] .gallery-item{display:flex;align-items:center;justify-content:center;max-width:100%;height:auto;padding:0;border:0;overflow:visible}
+.section-card[data-role="full-sketches"] .gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain}
+.section-card[data-role="digital"] .gallery-item img{display:block;width:100%;height:100%;object-fit:contain}
+.section-card[data-role="videos"] .ron-trump-gif-card{width:200px;max-width:200px;flex:0 1 200px;margin:0}
+.section-card[data-role="videos"] .ron-trump-gif-link{display:flex;width:100%;max-width:200px;height:200px;align-items:center;justify-content:center;padding:6px;border:1px solid var(--set-border);border-radius:10px;overflow:hidden;text-decoration:none}
+.section-card[data-role="videos"] .ron-trump-gif-link img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+@media(max-width:480px){.section-card{padding:12px}.index-grid,.group-grid,.gallery-grid{gap:12px}.wrap{width:calc(100% - 20px)}}
 </style></head>
 <body>
 <main class="wrap">
-<nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="trump.html">&larr; Trump</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav>
+<nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="trump.html">← Trump</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav>
 <header class="page-header"><h1 class="page-title">Trump Duck</h1></header>
 <section class="section-card ron-set-grid-panel-20261027" data-role="index-listing"><div class="group-grid">
-<a class="group-card" href="../works/re-014023.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%289%29.jpg?v=20260616b" alt="Trump Body Hat's Off" loading="lazy"><div class="label">Trump Body Hat's Off</div></a>
-<a class="group-card" href="../works/re-013348.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/celebrity-characters/Politicians/Trump%20Duck%20Face%20COLOR.jpg" alt="Trump Duck Face" loading="lazy"><div class="label">Trump Duck Face</div></a>
+<a class="group-card" href="../works/re-014023.html"><img alt="Trump Body Hat's Off" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%289%29.jpg?v=20260616b"/><div class="label">Trump Body Hat's Off</div></a>
+<a class="group-card" href="../works/re-013348.html"><img alt="Trump Duck Face" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/celebrity-characters/Politicians/Trump%20Duck%20Face%20COLOR.jpg"/><div class="label">Trump Duck Face</div></a>
 </div></section>
-<section class="section-card ron-drawing-documentation-category" data-role="ancillary-documentation" data-category="artist-created-graphic-designs" data-revision="ron-drawing-documentary-rebuilt-v1"><h2>Artist-Created Graphic Designs</h2><div class="ron-doc-category-items"><figure class="ron-doc-category-item"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/donaldschmuckblackfinal.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/donaldschmuckblackfinal.jpg" alt="Trump Duck ancillary documentation" loading="lazy"></a></figure>
-<figure class="ron-doc-category-item"><a class="ron-ancillary-image-only" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/chumpfortrumpflat.jpg" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/chumpfortrumpflat.jpg" alt="Ancillary documentation" loading="lazy"></a></figure></div></section>
-<section class="section-card" data-role="videos"><h2>Videos</h2><div class="ron-yt-clean-grid"><figure class="ron-yt-clean-tile" data-original-mp4="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-013348%20etc.mp4"><a class="ron-video-poster" data-ron-video-poster="v1" data-video-embed-url="https://www.youtube.com/embed/dxQdeD-FPgA" href="https://www.youtube.com/watch?v=dxQdeD-FPgA" target="_blank" rel="noopener noreferrer" aria-label="Watch Trump Duck on YouTube"><img src="https://i.ytimg.com/vi/dxQdeD-FPgA/hqdefault.jpg" alt="Video preview: Trump Duck" loading="lazy" onerror="this.onerror=null;this.src=&quot;https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/celebrity-characters/Politicians/Trump%20Duck%20Face%20COLOR.jpg&quot;;"><span aria-hidden="true" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 20px;font-size:28px;line-height:1;color:#fff;background:rgba(0,0,0,.82);border-radius:14px;">&#9654;</span></a><figcaption><a href="https://www.youtube.com/watch?v=dxQdeD-FPgA" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></figcaption></figure></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="../works/re-012210.html">&larr; Previous: Trump Richie Rich</a><a class="nav-pill sequence-pill" href="trump-animation-sketches.html">Next: Trump Animation Sketches &rarr;</a></nav>
-<footer>Published via GitHub Pages<br>for long-term public access.</footer>
+<section class="section-card ron-drawing-documentation-category" data-category="artist-created-graphic-designs" data-revision="ron-drawing-documentary-rebuilt-v1" data-role="ancillary-documentation"><h2>Artist-Created Graphic Designs</h2><div class="ron-doc-category-items"><figure class="ron-doc-category-item"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/donaldschmuckblackfinal.jpg" rel="noopener" target="_blank"><img alt="Trump Duck ancillary documentation" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/donaldschmuckblackfinal.jpg"/></a></figure>
+<figure class="ron-doc-category-item"><a class="ron-ancillary-image-only" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/chumpfortrumpflat.jpg" rel="noopener noreferrer" target="_blank"><img alt="Ancillary documentation" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/chumpfortrumpflat.jpg"/></a></figure></div></section>
+<section class="section-card" data-role="videos"><h2>Videos</h2><div class="ron-yt-clean-grid"><figure class="ron-yt-clean-tile" data-original-mp4="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-013348%20etc.mp4"><a aria-label="Watch Trump Duck on YouTube" class="ron-video-poster" data-ron-video-poster="v1" data-video-embed-url="https://www.youtube.com/embed/dxQdeD-FPgA" href="https://www.youtube.com/watch?v=dxQdeD-FPgA" rel="noopener noreferrer" target="_blank"><img alt="Video preview: Trump Duck" loading="lazy" onerror='this.onerror=null;this.src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/celebrity-characters/Politicians/Trump%20Duck%20Face%20COLOR.jpg";' src="https://i.ytimg.com/vi/dxQdeD-FPgA/hqdefault.jpg"/><span aria-hidden="true" class="ron-play-small">▶</span></a></figure></div></section><nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill" href="../works/re-012210.html">← Previous: Trump Richie Rich</a><a class="nav-pill sequence-pill" href="trump-animation-sketches.html">Next: Trump Animation Sketches →</a></nav>
+<footer>Published via GitHub Pages<br/>for long-term public access.</footer>
 </main>
 </body>
 </html>
