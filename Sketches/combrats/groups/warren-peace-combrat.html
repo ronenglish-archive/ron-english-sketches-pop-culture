@@ -67,6 +67,9 @@ line-height:1.05
 
 .hero-card,
 .section-card{
+max-width:560px;
+margin-left:auto;
+margin-right:auto;
 border:1px solid var(--border);
 border-radius:18px;
 box-shadow:var(--shadow);
@@ -178,6 +181,63 @@ height:300px
 max-height:360px
 }
 }
+
+/* Alien Cherub reference dimensions: desktop 200px cards / 158px image / 16px gap;
+   mobile <=480px: 145px cards / 140px image / 12px gap. */
+.section-card[data-role="warren-peace-gallery"] .gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,155px));
+  justify-content:center;
+  gap:16px;
+}
+.section-card[data-role="warren-peace-gallery"] .gallery-item{
+  width:100%;
+  max-width:155px;
+  border-radius:12px;
+}
+.section-card[data-role="warren-peace-gallery"] .gallery-item img{
+  height:180px;
+  padding:8px;
+}
+.section-card[data-role="warren-peace-gallery"] .entry-body{
+  padding:10px 8px 12px;
+}
+.section-card[data-role="warren-peace-gallery"] .work-title{
+  font-size:14px;
+  line-height:1.35;
+}
+.section-card[data-role="warren-peace-gallery"] .gallery-item:nth-child(4){grid-column:2;}
+@media(max-width:700px){
+  .section-card[data-role="warren-peace-gallery"] .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,200px));
+  }
+  .section-card[data-role="warren-peace-gallery"] .gallery-item:nth-child(4){grid-column:auto;}
+}
+@media(max-width:480px){
+  .section-card[data-role="warren-peace-gallery"] .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,145px));
+    gap:12px;
+  }
+  .section-card[data-role="warren-peace-gallery"] .gallery-item{max-width:145px;}
+  .section-card[data-role="warren-peace-gallery"] .gallery-item img{height:140px;}
+  .section-card[data-role="warren-peace-gallery"] .work-title{font-size:13px;}
+}
+@media(max-width:355px){
+  .section-card[data-role="warren-peace-gallery"] .gallery-grid{
+    grid-template-columns:minmax(0,145px);
+  }
+}
+
+/* Enlarge only the Full Character image, preserving its original link. */
+.section-card[data-role="full-character"] .gallery-item{
+  flex:0 1 760px;
+  max-width:760px;
+}
+.section-card[data-role="full-character"] .gallery-item img{
+  height:auto;
+  max-height:680px;
+  object-fit:contain;
+}
 </style>
 <style id="ron-bottom-prev-next-center-v1">
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */
@@ -195,6 +255,15 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
+
+/* Approved group-card geometry V1: CSS only; all body content unchanged. */
+section.section-card[data-role="warren-peace-gallery"]{box-sizing:border-box;max-width:560px;width:100%;margin-left:auto;margin-right:auto;}
+section.section-card[data-role="warren-peace-gallery"] .gallery-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;}
+section.section-card[data-role="warren-peace-gallery"] .gallery-grid > .gallery-item{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;overflow:hidden!important;}
+section.section-card[data-role="warren-peace-gallery"] .gallery-grid > .gallery-item > img{box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;height:0!important;max-width:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center!important;}
+section.section-card[data-role="warren-peace-gallery"] .gallery-grid > .gallery-item > .entry-body{flex:0 0 auto!important;}
+@media(max-width:240px){section.section-card[data-role="warren-peace-gallery"] .gallery-grid > .gallery-item{flex-basis:100%!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1;}}
+/* The separate Full Character section is deliberately excluded. */
 </style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
 
@@ -203,28 +272,28 @@ nav.ron-bottom-prev-next-center > a{
 
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Combrats</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav>
 
-<h1 class="page-title">Warren Peace Combrat</h1><section class="section-card" data-role="turnarounds"><h2>Warren Peace Combrat Turnarounds</h2><div class="gallery-grid"><a class="gallery-item" href="../warren-peace-combrat-front.html">
+<h1 class="page-title">Warren Peace Combrat</h1>
+<section class="section-card" data-role="warren-peace-gallery">
+<div class="gallery-grid">
+<a class="gallery-item" href="../warren-peace-combrat-front.html">
 <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Warren%20Peace%20Combrat%20COLOR.jpg" alt="Warren Peace Combrat Front" loading="lazy">
 <div class="entry-body">
 <p class="work-title">Warren Peace Combrat Front</p>
 </div>
-</a><a class="gallery-item" href="../warren-peace-combrat-side.html">
+</a>
+<a class="gallery-item" href="../warren-peace-combrat-side.html">
 <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Warren%20Peace%20Side%20COLOR.jpg" alt="Warren Peace Combrat Side" loading="lazy">
 <div class="entry-body">
 <p class="work-title">Warren Peace Combrat Side</p>
 </div>
-</a></div><p style="text-align:center"><a href="warren-peace-combrat-turnarounds.html" target="_blank" rel="noopener noreferrer">Warren Peace Combrat Turnarounds</a></p></section>
-
-<section class="section-card">
-
-
-<div class="gallery-grid">
+</a>
 <a class="gallery-item" href="../warren-peace-combrat-floating.html">
 <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Floating%20Combrat%20COLOR.jpg" alt="Warren Peace Combrat Floating" loading="lazy">
 <div class="entry-body">
 <p class="work-title">Warren Peace Combrat Floating</p>
 </div>
-</a><a class="gallery-item" href="../warren-peace-combrat-jamming.html">
+</a>
+<a class="gallery-item" href="../warren-peace-combrat-jamming.html">
 <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Warren%20Peace%202%20COLOR.jpg" alt="Warren Peace Combrat Jamming" loading="lazy">
 <div class="entry-body">
 <p class="work-title">Warren Peace Combrat Jamming</p>

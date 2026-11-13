@@ -1,372 +1,232 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Combrats | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
-<link rel="stylesheet" href="../../css/styles.css">
-<style>
-:root{--border:#e5e7eb;--muted:#6b7280;--shadow:0 10px 30px rgba(0,0,0,.08);--radius:18px;--panel:#f8fafc}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;background:#fff}
-.wrap{max-width:1240px;margin:0 auto;padding:28px 18px 60px}
-.nav-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0}
-.nav-pill,.back-link a{padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:#111;text-decoration:none;font-size:14px}
-.page-header{text-align:center;max-width:1100px;margin:0 auto 26px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
-.section-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:24px}
-.section-card h2{text-align:center;margin:0 0 14px;font-size:1.4rem}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-.gallery-item{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-.gallery-item img{width:100%;height:240px;object-fit:contain;display:block;background:var(--panel);padding:10px;border-bottom:1px solid var(--border)}
-.entry-body{padding:14px 16px 16px;text-align:center}
-.work-title{margin:0;font-size:18px;line-height:1.35;font-weight:600;text-align:center}.set-label{display:block;margin-top:4px;font-size:.88em;font-weight:500;color:var(--muted)}
-.meta-grid{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;max-width:860px;margin:0 auto;line-height:1.55}
-.meta-label{font-weight:700}
-.relationship-note{max-width:900px;margin:14px auto 0;padding:12px 14px;background:#f9fafb;border:1px solid var(--border);border-radius:12px;line-height:1.55;text-align:center}
-.relationship-note a{color:inherit}
-.text-block{max-width:900px;margin:0 auto;line-height:1.65}
-.back-link{text-align:center;margin-top:28px}
-footer{text-align:center;margin-top:34px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-@media(max-width:1100px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:820px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.gallery-grid{grid-template-columns:1fr}.gallery-item img{height:220px}.meta-grid{grid-template-columns:1fr}}
-</style>
-<!-- SKETCH-SWEEP-STYLES START -->
-<style>
-.nav-pills{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:10px!important;margin:22px 0!important}
-.nav-pill,.back-link a{display:inline-block!important;padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
-.page-header,.section-card h2,.text-block,.relationship-note,.back-link,footer{text-align:center!important}
-.meta-grid{display:grid!important;grid-template-columns:1fr!important;justify-items:center!important;text-align:center!important;gap:6px 0!important;max-width:900px!important;margin:0 auto!important;line-height:1.6!important}
-.meta-label{font-weight:700!important}
-.gallery-grid,.category-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
-.gallery-grid > *, .category-grid > *{flex:0 1 260px!important;max-width:300px!important;width:100%!important}
-[data-sweep-section="original-drawing"] .gallery-grid > *{flex:0 1 920px!important;max-width:920px!important}
-[data-sweep-section="original-drawing"] .gallery-item img{height:420px!important;object-fit:contain!important}
-[data-sweep-section="original-drawing"] .entry-body,
-[data-sweep-section="digitized-versions"] .entry-body{display:none!important}
-[data-sweep-section="original-drawing"] .gallery-grid,
-[data-sweep-section="digitized-versions"] .gallery-grid{justify-content:center!important}
-[data-sweep-section="literature"] .text-block,
-[data-sweep-section="notes"] .text-block,
-[data-sweep-section="exhibitions"] .text-block,
-[data-sweep-section="cards"] .text-block,
-[data-sweep-section="artist-with-drawing"] .text-block{text-align:center!important}
-@media(max-width:700px){
-  [data-sweep-section="original-drawing"] .gallery-item img{height:300px!important}
-  .gallery-grid > *, .category-grid > *{flex:0 1 min(100%,320px)!important;max-width:320px!important}
-}
-</style>
-<!-- SKETCH-SWEEP-STYLES END -->
-<!-- GLOBAL-SKETCH-RULES START -->
-<style>
-.nav-pills{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:10px!important;
-  margin:22px 0!important;
-  text-align:center!important;
-}
-.nav-pill,.back-link a{
-  display:inline-block!important;
-  padding:8px 14px!important;
-  border-radius:999px!important;
-  border:1px solid #e5e7eb!important;
-  background:#fff!important;
-  color:#111!important;
-  text-decoration:none!important;
-  font-size:14px!important;
-}
-.page-header,.page-title,.intro-text,.intro-text p,
-.section-card h2,.section-card h3,.section-intro,
-.text-block,.text-block p,.relationship-note,
-.meta-grid,.meta-grid div,.entry-body,.work-title,.back-link,footer{
-  text-align:center!important;
-}
-.meta-grid{
-  display:grid!important;
-  grid-template-columns:1fr!important;
-  justify-items:center!important;
-  gap:5px 0!important;
-  max-width:900px!important;
-  margin:0 auto!important;
-}
-.gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-  flex:0 1 260px!important;
-  max-width:300px!important;
-  width:100%!important;
-}
-[data-sweep-section="original-drawing"] .gallery-grid>*{
-  flex:0 1 920px!important;
-  max-width:920px!important;
-}
-[data-sweep-section="original-drawing"] .gallery-item img{
-  height:420px!important;
-  object-fit:contain!important;
-}
-[data-sweep-section="original-drawing"] .entry-body,
-[data-sweep-section="digitized-versions"] .entry-body{
-  display:none!important;
-}
-footer{
-  margin-top:34px!important;
-  padding-top:16px!important;
-  border-top:1px solid #e5e7eb!important;
-  color:#6b7280!important;
-  font-size:14px!important;
-}
-footer a{color:inherit!important;text-decoration:none!important}
-footer a:hover{text-decoration:underline!important}
-@media(max-width:700px){
-  .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-    flex:0 1 min(100%,320px)!important;
-    max-width:320px!important;
-  }
-  [data-sweep-section="original-drawing"] .gallery-item img{height:300px!important}
-}
-</style>
-<!-- GLOBAL-SKETCH-RULES END -->
-<!-- PAINTINGS-STYLE-SWEEP START -->
-<style>
-.nav-pills,.sequence-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:10px!important;margin:20px 0!important}
-.nav-pill,.sequence-pill{padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
-.work-meta{list-style:none!important;padding:0!important;margin:0 auto 24px!important;max-width:820px!important;line-height:1.7!important;text-align:center!important}
-.work-meta li{display:block!important;width:100%!important;margin:2px 0!important;padding:0!important;text-align:center!important}
-.work-meta li strong{display:inline!important;font-weight:700!important}
-.text-block,.relationship-note,.section-card h2,.page-title,.back-link,footer{text-align:center!important}
-.gallery-grid,.index-grid,.category-grid,.subcategories-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:18px!important}
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*{flex:0 1 260px!important;max-width:300px!important;width:100%!important}
-[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
-[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
-[data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{margin:28px 0!important}
-footer{margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;color:#6b7280!important;font-size:14px!important}
-</style>
-<!-- PAINTINGS-STYLE-SWEEP END -->
-<!-- SKETCH-V8-STYLE START -->
-<style>
-.nav-pills,.sequence-nav{
-display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;
-gap:10px!important;margin:20px 0!important;text-align:center!important}
-.nav-pill,.sequence-pill{
-padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;
-background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
-.catalogue-meta-block{width:100%!important;max-width:900px!important;margin:0 auto 28px!important;text-align:center!important}
-.work-meta{list-style:none!important;padding:0!important;margin:0 auto!important;width:100%!important;max-width:900px!important;text-align:center!important;line-height:1.7!important}
-.work-meta li{display:block!important;width:100%!important;margin:2px auto!important;padding:0!important;text-align:center!important}
-.work-meta li strong{display:inline!important;font-weight:700!important}
-.page-header,.page-title,.section-card h2,.section-card h3,.text-block,.text-block p,.relationship-note,.back-link,footer{text-align:center!important}
-.gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
-display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-flex:0 1 260px!important;max-width:300px!important;width:100%!important}
-[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
-[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
-[data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{margin:28px 0!important}
-footer{margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;color:#6b7280!important;font-size:14px!important;text-align:center!important}
-@media(max-width:700px){
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{flex:0 1 min(100%,320px)!important;max-width:320px!important}
-[data-role="original"] .gallery-item img{height:300px!important}}
-</style>
-<!-- SKETCH-V8-STYLE END -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combrats | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+  <style>
+    /* Layout and typography */
+    :root {
+      --border: #e5e7eb;
+      --muted: #6b7280;
+      --panel: #f8fafc;
+    }
 
-<!-- SKETCH-V10-STYLE START -->
-<style>
-.nav-pills,.sequence-nav{
-display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;
-gap:10px!important;margin:20px 0!important;text-align:center!important}
-.nav-pill,.sequence-pill{
-padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;
-background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
-.catalogue-meta-block{
-width:100%!important;max-width:900px!important;margin:0 auto 28px!important;text-align:center!important}
-.work-meta{
-list-style:none!important;padding:0!important;margin:0 auto!important;width:100%!important;
-max-width:900px!important;line-height:1.7!important;text-align:center!important}
-.work-meta li{
-display:block!important;width:100%!important;margin:2px auto!important;padding:0!important;text-align:center!important}
-.work-meta li strong{display:inline!important;font-weight:700!important}
-.page-header,.page-title,.section-card h2,.section-card h3,.text-block,.text-block p,.relationship-note,footer{text-align:center!important}
-.gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
-display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-flex:0 1 260px!important;max-width:300px!important;width:100%!important}
-[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
-[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
-[data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{margin:28px 0 18px!important}
-footer{
-margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;
-color:#6b7280!important;font-size:14px!important;text-align:center!important}
-@media(max-width:700px){
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-flex:0 1 min(100%,320px)!important;max-width:320px!important}
-[data-role="original"] .gallery-item img{height:300px!important}}
-</style>
-<!-- SKETCH-V10-STYLE END -->
-<style id="sketches-index-centered-final-row-v2">
-  .gallery-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
-  .gallery-grid > .index-card,.gallery-grid > .group-card,.gallery-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
-</style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #111;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .wrap {
+      width: calc(100% - 36px);
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 26px 0 48px;
+    }
 
-<style id="ron-four-across-v3">
-/* ron-four-across-v3 */
-.gallery-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.gallery-grid > .gallery-item{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc(25% - 28px)!important;
-  width:calc(25% - 28px)!important;
-  max-width:calc(25% - 28px)!important;
-}
-@media(max-width:900px){
-  .gallery-grid > .gallery-item{
-    flex-basis:calc(33.333% - 24px)!important;
-    width:calc(33.333% - 24px)!important;
-    max-width:calc(33.333% - 24px)!important;
-  }
-}
-@media(max-width:680px){
-  .gallery-grid > .gallery-item{
-    flex-basis:calc(50% - 18px)!important;
-    width:calc(50% - 18px)!important;
-    max-width:calc(50% - 18px)!important;
-  }
-}
-@media(max-width:440px){
-  .gallery-grid > .gallery-item{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style><style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-category-sequence-standard-v1">nav.sequence-nav.ron-bottom-prev-next-center{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin:28px auto 18px!important;text-align:center!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill{display:inline-block!important;flex:0 1 auto!important;padding:8px 14px!important;border:1px solid #e5e7eb!important;border-radius:999px!important;background:#fff!important;color:#111!important;text-decoration:none!important;font:400 14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:hover,nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:focus{background:#f9fafb!important}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+    /* Navigation */
+    .nav-pills, .sequence-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .nav-pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .nav-pill:hover, .nav-pill:focus-visible { background: #f9fafb; }
+    .sequence-nav { margin: 28px auto 18px; gap: 12px; }
+
+    /* Heading */
+    .page-header { text-align: center; margin: 0 auto 24px; }
+    .page-title { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
+
+    /* Standard compact artwork cards */
+    .index-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 16px;
+      margin: 0 auto;
+    }
+    .index-card {
+      display: flex;
+      flex: 0 0 200px;
+      width: 200px;
+      max-width: 200px;
+      min-width: 0;
+      flex-direction: column;
+      color: inherit;
+      text-decoration: none;
+      text-align: center;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #0000000b;
+    }
+    .index-card:hover { border-color: #c9ced5; box-shadow: 0 5px 16px #00000014; }
+    .index-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 158px;
+      padding: 8px;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .index-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .index-title {
+      margin: 0;
+      padding: 10px 8px 12px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .set-label {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    /* Footer */
+    footer {
+      margin: 30px auto 0;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 24px); }
+      .index-grid { gap: 12px; }
+      .index-card { flex: 0 1 145px; width: 145px; max-width: 145px; }
+      .index-image { height: 140px; }
+      .index-title { font-size: 13px; }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
-<body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav><header class="page-header"><h1 class="page-title">Combrats</h1></header><section class="gallery-grid">
-<a class="gallery-item" href="combrat-element/index.html">
-<img src="../../images/Sketches/Combrats/Combrat%20Element%20COLOR.jpg" alt="Combrat Element drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrat Element</p></div>
-</a>
-<a class="gallery-item" href="combrat-in-duck-boat/index.html">
-<img src="../../images/Sketches/Combrats/Combrat%20in%20Duck%20Boat%20COLOR.jpg" alt="Combrat in Duck Boat drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrat in Duck Boat</p></div>
-</a>
-<a class="gallery-item" href="groups/combrat-kids.html">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29.jpg?v=20260618a" alt="Combrat Kids" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrat Kids<span class="set-label">Set</span></p></div>
-</a>
-<a class="gallery-item" href="combrat-horse.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Combrat%20Horse%20ORIGINAL.jpg" alt="Combrat on Horse" loading="lazy"><div class="entry-body"><p class="work-title">Combrat on Horse</p></div></a>
-<a class="gallery-item" href="groups/combrat-sketches.html">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260612%20%282%29.jpg?v=20260612a" alt="Combrat Sketches" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrat Sketches<span class="set-label">Set</span></p></div>
-</a>
-<a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kursed/combrater/index.html">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260830%20%282%29.jpg?v=20260915-2015" alt="Combrater" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrater</p></div>
-</a>
-<a class="gallery-item" href="combrats-family-icon/index.html">
-<img src="../../images/Sketches/Combrats/Combrats%20Family%20Icon%20COLOR.jpg" alt="Combrats Family Icon drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Combrats Family Icon</p></div>
-</a>
-<a class="gallery-item" href="love-combrat/index.html">
-<img src="../../images/Sketches/Combrats/Love%20Combrat%20COLOR.jpg" alt="Love Combrat drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Love Combrat<span class="set-label">Set</span></p></div>
-</a>
-<a class="gallery-item" href="peace-out.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20261018.jpg" alt="Peace Out" loading="lazy"><div class="entry-body"><p class="work-title">Peace Out</p></div></a>
-<a class="gallery-item" href="poultry-rex-with-combrat-rider/index.html">
-<img src="../../images/Sketches/Combrats/Poultry%20Rex%20With%20Combrat%20Rider%20COLOR.jpg" alt="Poultry Rex With Combrat Rider drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Poultry Rex With Combrat Rider</p></div>
-</a>
-<a class="gallery-item" href="sarge-combrat/index.html">
-<img src="../../images/Sketches/Combrats/Sarge%20Combrat%20COLOR.jpg" alt="Sarge Combrat drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Sarge Combrat<span class="set-label">Set</span></p></div>
-</a>
-<a class="gallery-item" href="warren-peace-combrat/index.html">
-<img src="../../images/Sketches/Combrats/Warren%20Peace%20Combrat%20COLOR.jpg" alt="Warren Peace Combrat drawings by Ron English" loading="lazy">
-<div class="entry-body"><p class="work-title">Warren Peace Combrat<span class="set-label">Set</span></p></div>
-</a></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-people-characters/Sketches/people-characters/character-groups-and-ensembles/index.html">&larr; Previous: Character Groups &amp; Ensembles</a><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/ungulates/deer/index.html">Next: Deer &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body>
+<body>
+  <main class="wrap">
+    <nav class="nav-pills">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+    </nav>
+    <header class="page-header">
+      <h1 class="page-title">Combrats</h1>
+    </header>
+    <section class="index-grid">
+      <a class="index-card" href="combrat-element/index.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Combrat%20Element%20COLOR.jpg" alt="Combrat Element drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Combrat Element</div>
+      </a>
+      <a class="index-card" href="combrat-in-duck-boat/index.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Combrat%20in%20Duck%20Boat%20COLOR.jpg" alt="Combrat in Duck Boat drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Combrat in Duck Boat</div>
+      </a>
+      <a class="index-card" href="groups/combrat-kids.html">
+        <div class="index-image">
+          <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29.jpg?v=20260618a" alt="Combrat Kids" loading="lazy">
+        </div>
+        <div class="index-title">Combrat Kids<span class="set-label">Set</span></div>
+      </a>
+      <a class="index-card" href="combrat-horse.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Combrat%20Horse%20ORIGINAL.jpg" alt="Combrat on Horse" loading="lazy">
+        </div>
+        <div class="index-title">Combrat on Horse</div>
+      </a>
+      <a class="index-card" href="groups/combrat-sketches.html">
+        <div class="index-image">
+          <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260612%20%282%29.jpg?v=20260612a" alt="Combrat Sketches" loading="lazy">
+        </div>
+        <div class="index-title">Combrat Sketches<span class="set-label">Set</span></div>
+      </a>
+      <a class="index-card" href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kursed/combrater/index.html">
+        <div class="index-image">
+          <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260830%20%282%29.jpg?v=20260915-2015" alt="Combrater" loading="lazy">
+        </div>
+        <div class="index-title">Combrater</div>
+      </a>
+      <a class="index-card" href="combrats-family-icon/index.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Combrats%20Family%20Icon%20COLOR.jpg" alt="Combrats Family Icon drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Combrats Family Icon</div>
+      </a>
+      <a class="index-card" href="groups/love-combrat.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Love%20Combrat%20COLOR.jpg" alt="Love Combrat drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Love Combrat<span class="set-label">Set</span></div>
+      </a>
+      <a class="index-card" href="peace-out.html">
+        <div class="index-image">
+          <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20261018.jpg" alt="Peace Out" loading="lazy">
+        </div>
+        <div class="index-title">Peace Out</div>
+      </a>
+      <a class="index-card" href="poultry-rex-with-combrat-rider/index.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Poultry%20Rex%20With%20Combrat%20Rider%20COLOR.jpg" alt="Poultry Rex With Combrat Rider drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Poultry Rex With Combrat Rider</div>
+      </a>
+      <a class="index-card" href="groups/sarge-combrat.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Sarge%20Combrat%20COLOR.jpg" alt="Sarge Combrat drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Sarge Combrat<span class="set-label">Set</span></div>
+      </a>
+      <a class="index-card" href="groups/warren-peace-combrat.html">
+        <div class="index-image">
+          <img src="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/images/Sketches/Combrats/Warren%20Peace%20Combrat%20COLOR.jpg" alt="Warren Peace Combrat drawings by Ron English" loading="lazy">
+        </div>
+        <div class="index-title">Warren Peace Combrat<span class="set-label">Set</span></div>
+      </a>
+    </section>
+    <nav class="sequence-nav" aria-label="Catalogue sequence">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-people-characters/Sketches/people-characters/character-groups-and-ensembles/index.html">← Previous: Character Groups &amp; Ensembles</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/ungulates/deer/index.html">Next: Deer →</a>
+    </nav>
+    <footer>Published via GitHub Pages<br>for long-term public access.</footer>
+  </main>
+</body>
 </html>

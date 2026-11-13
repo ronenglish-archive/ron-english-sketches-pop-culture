@@ -32,7 +32,7 @@ text-align:center
 }
 
 .wrap{
-max-width:1120px;
+max-width:560px;
 margin:0 auto;
 padding:28px 18px 56px
 }
@@ -102,8 +102,8 @@ gap:18px
 
 .gallery-item{
 display:block;
-flex:0 1 260px;
-max-width:300px;
+flex:0 1 155px;
+max-width:155px;
 width:100%;
 border:1px solid var(--border);
 border-radius:18px;
@@ -116,7 +116,7 @@ color:#111
 .gallery-item img{
 display:block;
 width:100%;
-height:260px;
+height:180px;
 object-fit:contain;
 background:var(--panel);
 padding:6px
@@ -166,12 +166,12 @@ text-align:center!important
 
 @media(max-width:700px){
 .gallery-item{
-flex-basis:320px;
-max-width:320px
+flex-basis:145px;
+max-width:145px
 }
 
 .gallery-item img{
-height:300px
+height:140px
 }
 
 .hero-image{
@@ -200,6 +200,14 @@ nav.ron-bottom-prev-next-center > a{
 section.ron-combrats-group-panel-20261027{box-sizing:border-box;width:100%;max-width:1120px;margin:0 auto 24px;padding:22px;border:1px solid #e5e7eb;border-radius:18px;background:#fff;box-shadow:0 8px 26px rgba(0,0,0,.06)}
 section.ron-combrats-group-panel-20261027 > .group-grid,section.ron-combrats-group-panel-20261027 > .member-grid,section.ron-combrats-group-panel-20261027 > .index-grid,section.ron-combrats-group-panel-20261027 > .gallery-grid{width:100%;}
 @media(max-width:600px){section.ron-combrats-group-panel-20261027{padding:14px}}
+
+/* Approved group-card geometry V1: CSS only; all body content unchanged. */
+section.section-card.ron-combrats-group-panel-20261027{box-sizing:border-box;max-width:560px;width:100%;margin-left:auto;margin-right:auto;}
+section.section-card.ron-combrats-group-panel-20261027 > .gallery-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;}
+section.section-card.ron-combrats-group-panel-20261027 > .gallery-grid > .gallery-item{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;overflow:hidden!important;}
+section.section-card.ron-combrats-group-panel-20261027 > .gallery-grid > .gallery-item > img{box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;height:0!important;max-width:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center!important;}
+section.section-card.ron-combrats-group-panel-20261027 > .gallery-grid > .gallery-item > .entry-body{flex:0 0 auto!important;}
+@media(max-width:240px){section.section-card.ron-combrats-group-panel-20261027 > .gallery-grid > .gallery-item{flex-basis:100%!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1;}}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
