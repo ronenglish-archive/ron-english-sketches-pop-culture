@@ -1,18 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Combrat Kids | Sketches &amp; Drawings | Ron English Catalogue Raisonn&eacute;</title>
-
-<link rel="stylesheet" href="../../../css/styles.css">
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Combrat Kids | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+<link href="../../../css/styles.css" rel="stylesheet"/>
 <!-- COMBRATS-SET-HUB-Combrat Kids -->
-
-<style id="combrat-kids-compact-overview-v1">
-/* Combrat Kids group overview: compact, centered artwork cards. */
+<style>
 :root {
   --border: #e5e7eb;
   --muted: #6b7280;
@@ -27,7 +22,6 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   text-align: center;
 }
-.wrap { width: 100%; max-width: 760px; margin: 0 auto; padding: 24px 18px 44px; }
 .nav-pills, .sequence-nav {
   display: flex;
   flex-wrap: wrap;
@@ -46,12 +40,6 @@ body {
   font-size: 14px;
   text-decoration: none;
 }
-.page-title {
-  margin: 0 0 20px;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.05;
-font-family:Georgia,"Times New Roman",serif;font-weight:500}
-/* Retain the approved Combrats group panel and its existing section class. */
 section.section-card.ron-combrats-group-panel-20261027 {
   width: 100%;
   max-width: 560px;
@@ -62,37 +50,7 @@ section.section-card.ron-combrats-group-panel-20261027 {
   background: #fff;
   box-shadow: var(--shadow);
 }
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 16px;
-}
-.gallery-item {
-  display: block;
-  flex: 0 0 200px;
-  width: 200px;
-  max-width: 100%;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: #fff;
-  color: #111;
-  text-decoration: none;
-}
-.gallery-item img {
-  display: block;
-  width: 100%;
-  height: 158px;
-  padding: 6px;
-  background: var(--panel);
-  object-fit: contain;
-}
-.entry-body { padding: 10px 9px 12px; text-align: center; }
-.work-title { margin: 0; font-size:14px; font-weight:500; line-height:1.35;;font-family:Georgia,'Times New Roman',serif}
 .work-id { margin: 0; font-size: 13px; color: var(--muted); }
-/* Preserve centered bottom Previous/Next links; hide only existing spacer elements. */
 nav.ron-bottom-prev-next-center { justify-content: center; gap: 12px; }
 nav.ron-bottom-prev-next-center .sequence-spacer { display: none; }
 nav.ron-bottom-prev-next-center > a { flex: 0 1 auto; }
@@ -103,44 +61,59 @@ footer {
   color: var(--muted);
   font-size: 14px;
 }
-@media (max-width: 600px) {
-  .wrap { padding: 20px 12px 36px; }
-  section.section-card.ron-combrats-group-panel-20261027 { padding: 14px; }
-  .gallery-grid { gap: 12px; }
-  .gallery-item { flex-basis: 145px; width: 145px; }
-  .gallery-item img { height: 140px; }
-  .work-title { font-size:14px;;font-family:Georgia,'Times New Roman',serif;line-height:1.35}
+@media  (max-width: 600px) {
+section.section-card.ron-combrats-group-panel-20261027 { padding: 14px; }
 }
-</style>
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head>
 
+/* Canonical Sets & Groups member layout — consolidated 2026-11-13.
+   Replaces retired card-geometry and three-across override blocks. */
+*, *::before, *::after { box-sizing: border-box; }
+main.wrap { width:100%; max-width:700px; margin:0 auto; padding:28px 10px 56px; }
+main.wrap .page-header { text-align:center; margin:0 auto 22px; }
+main.wrap h1 { margin:0; text-align:center; font:500 28px/1.2 Georgia,"Times New Roman",serif; }
+main.wrap > section.section-card { width:100%; max-width:680px; margin:0 auto 24px; padding:18px; border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:none; }
+main.wrap > section.section-card .index-grid,
+main.wrap > section.section-card .member-grid,
+main.wrap > section.section-card .gallery-grid,
+main.wrap > section.section-card .group-grid { display:flex; flex-wrap:wrap; justify-content:center; align-items:stretch; gap:12px; width:100%; max-width:100%; margin:0 auto; padding:0; }
+main.wrap > section.section-card a.index-card,
+main.wrap > section.section-card a.catalog-card,
+main.wrap > section.section-card a.gallery-item { box-sizing:border-box; display:flex; flex:0 0 200px; flex-direction:column; width:200px; max-width:200px; min-width:0; height:204px; min-height:204px; margin:0; padding:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:12px; box-shadow:0 3px 12px #0000000b; background:#fff; color:#111; text-align:center; text-decoration:none; }
+main.wrap > section.section-card a.index-card > img,
+main.wrap > section.section-card a.catalog-card > img,
+main.wrap > section.section-card a.gallery-item > img { box-sizing:border-box; display:block; flex:0 0 158px; width:100%; height:158px; min-height:158px; max-height:158px; margin:0; padding:8px; object-fit:contain; background:#f8fafc; border-bottom:1px solid #e5e7eb; border-radius:0; }
+main.wrap > section.section-card a.index-card > .card-title,
+main.wrap > section.section-card a.catalog-card > .card-title,
+main.wrap > section.section-card a.gallery-item > .entry-body { display:flex; flex:1 0 44px; align-items:center; justify-content:center; width:100%; height:44px; min-height:44px; margin:0; padding:2px 6px; background:#fff; font:500 14px/1.3 Georgia,"Times New Roman",serif; text-align:center; overflow-wrap:anywhere; }
+main.wrap > section.section-card a.gallery-item > .entry-body > .work-title { margin:0; padding:0; font:inherit; }
+main.wrap > nav.sequence-nav, main.wrap > nav.ron-bottom-prev-next-center { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin:24px auto; text-align:center; }
+main.wrap > footer { text-align:center; }
+@media(max-width:719px) { main.wrap { width:calc(100% - 24px); padding:22px 0 48px; } main.wrap > section.section-card { padding:12px; } }
+@media(max-width:239px) { main.wrap > section.section-card a.index-card, main.wrap > section.section-card a.catalog-card, main.wrap > section.section-card a.gallery-item { max-width:100%; width:100%; flex-basis:100%; } }
+
+</style>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+</head>
 <body>
 <main class="wrap">
-
-<nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Combrats</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">← Combrats</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
-
 <h1 class="page-title">Combrat Kids</h1>
-
 <section class="section-card ron-combrats-group-panel-20261027" data-role="index-listing"><div class="gallery-grid">
 <a class="gallery-item" href="../combrat-kids-1.html">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29.jpg?v=20260618a" alt="Combrat Kids 1" loading="lazy">
+<img alt="Combrat Kids 1" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29.jpg?v=20260618a"/>
 <div class="entry-body">
 <p class="work-title">Combrat Kids 1</p>
 </div>
 </a><a class="gallery-item" href="../combrat-kids-2.html">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29m.jpg?v=20260618a" alt="Combrat Kids 2" loading="lazy">
+<img alt="Combrat Kids 2" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%284%29m.jpg?v=20260618a"/>
 <div class="entry-body">
 <p class="work-title">Combrat Kids 2</p>
 </div>
 </a>
 </div></section>
-
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="../combrat-in-duck-boat.html">&larr; Previous: Combrat in Duck Boat</a><a class="nav-pill sequence-pill" href="../combrat-horse.html">Next: Combrat on Horse &rarr;</a></nav>
-
-<footer>Published via GitHub Pages<br>for long-term public access.</footer>
-
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill" href="../combrat-in-duck-boat.html">← Previous: Combrat in Duck Boat</a><a class="nav-pill sequence-pill" href="../combrat-horse.html">Next: Combrat on Horse →</a></nav>
+<footer>Published via GitHub Pages<br/>for long-term public access.</footer>
 </main>
 </body>
 </html>
