@@ -48,7 +48,7 @@ section.section-card.ron-combrats-group-panel-20261027 {
   border: 1px solid var(--border);
   border-radius: 18px;
   background: #fff;
-  box-shadow: var(--shadow);
+  
 }
 .work-id { margin: 0; font-size: 13px; color: var(--muted); }
 nav.ron-bottom-prev-next-center { justify-content: center; gap: 12px; }
@@ -71,14 +71,14 @@ section.section-card.ron-combrats-group-panel-20261027 { padding: 14px; }
 main.wrap { width:100%; max-width:700px; margin:0 auto; padding:28px 10px 56px; }
 main.wrap .page-header { text-align:center; margin:0 auto 22px; }
 main.wrap h1 { margin:0; text-align:center; font:500 28px/1.2 Georgia,"Times New Roman",serif; }
-main.wrap > section.section-card { width:100%; max-width:680px; margin:0 auto 24px; padding:18px; border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:none; }
+main.wrap > section.section-card { width:100%; max-width:680px; margin:0 auto 24px; padding:18px; border:1px solid #e5e7eb; border-radius:12px; background:#fff;  }
 main.wrap > section.section-card .index-grid,
 main.wrap > section.section-card .member-grid,
 main.wrap > section.section-card .gallery-grid,
 main.wrap > section.section-card .group-grid { display:flex; flex-wrap:wrap; justify-content:center; align-items:stretch; gap:12px; width:100%; max-width:100%; margin:0 auto; padding:0; }
 main.wrap > section.section-card a.index-card,
 main.wrap > section.section-card a.catalog-card,
-main.wrap > section.section-card a.gallery-item { box-sizing:border-box; display:flex; flex:0 0 200px; flex-direction:column; width:200px; max-width:200px; min-width:0; height:204px; min-height:204px; margin:0; padding:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:12px; box-shadow:0 3px 12px #0000000b; background:#fff; color:#111; text-align:center; text-decoration:none; }
+main.wrap > section.section-card a.gallery-item { box-sizing:border-box; display:flex; flex:0 0 200px; flex-direction:column; width:200px; max-width:200px; min-width:0; height:204px; min-height:204px; margin:0; padding:0; overflow:hidden; border:1px solid #e5e7eb; border-radius:12px;  background:#fff; color:#111; text-align:center; text-decoration:none; }
 main.wrap > section.section-card a.index-card > img,
 main.wrap > section.section-card a.catalog-card > img,
 main.wrap > section.section-card a.gallery-item > img { box-sizing:border-box; display:block; flex:0 0 158px; width:100%; height:158px; min-height:158px; max-height:158px; margin:0; padding:8px; object-fit:contain; background:#f8fafc; border-bottom:1px solid #e5e7eb; border-radius:0; }
@@ -91,6 +91,13 @@ main.wrap > footer { text-align:center; }
 @media(max-width:719px) { main.wrap { width:calc(100% - 24px); padding:22px 0 48px; } main.wrap > section.section-card { padding:12px; } }
 @media(max-width:239px) { main.wrap > section.section-card a.index-card, main.wrap > section.section-card a.catalog-card, main.wrap > section.section-card a.gallery-item { max-width:100%; width:100%; flex-basis:100%; } }
 
+
+
+/* Combrats only: neutralize repository-wide image-card hover effects. */
+.gallery-item, .gallery-item:hover, .gallery-item:focus-visible,
+.gallery-item img, .gallery-item:hover img, .gallery-item:focus-visible img {
+  transform:none !important; box-shadow:none !important; transition:none !important;
+}
 </style>
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 </head>

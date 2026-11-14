@@ -72,7 +72,7 @@ margin-left:auto;
 margin-right:auto;
 border:1px solid var(--border);
 border-radius:18px;
-box-shadow:var(--shadow);
+
 padding:22px;
 margin-bottom:24px;
 background:#fff
@@ -237,6 +237,13 @@ max-height:360px
   height:auto;
   max-height:680px;
   object-fit:contain;
+}
+
+
+/* Combrats only: neutralize repository-wide image-card hover effects. */
+.gallery-item, .gallery-item:hover, .gallery-item:focus-visible,
+.gallery-item img, .gallery-item:hover img, .gallery-item:focus-visible img {
+  transform:none !important; box-shadow:none !important; transition:none !important;
 }
 </style>
 <style id="ron-bottom-prev-next-center-v1">
