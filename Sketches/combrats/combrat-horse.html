@@ -86,7 +86,7 @@ background:#f9fafb
 .section-card{
 border:1px solid var(--border);
 border-radius:18px;
-box-shadow:var(--shadow);
+
 padding:22px;
 margin-bottom:24px
 }
@@ -207,7 +207,7 @@ height:300px
   background:#fff;
   text-decoration:none;
   color:inherit;
-  box-shadow:0 8px 26px rgba(0,0,0,.06);
+  
 }
 
 .gallery-item img,.index-card img{
@@ -246,6 +246,13 @@ height:300px
   }
 }
 /* RON CARD SIZING NORMALIZATION END */
+
+
+/* Combrats only: neutralize repository-wide image-card hover effects. */
+.gallery-item, .gallery-item:hover, .gallery-item:focus-visible,
+.gallery-item img, .gallery-item:hover img, .gallery-item:focus-visible img {
+  transform:none !important; box-shadow:none !important; transition:none !important;
+}
 </style>
 <style id="ron-bottom-prev-next-center-v1">
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */

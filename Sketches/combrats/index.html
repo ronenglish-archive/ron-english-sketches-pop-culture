@@ -78,9 +78,9 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 3px 12px #0000000b;
+      
     }
-    .index-card:hover { border-color: #c9ced5; box-shadow: 0 5px 16px #00000014; }
+    .index-card:hover { border-color: #c9ced5;  }
     .index-image {
       display: flex;
       align-items: center;
@@ -135,7 +135,14 @@
       .index-image { height: 140px; }
       .index-title { font-size: 13px; }
     }
-  </style>
+  
+
+/* Combrats only: neutralize repository-wide image-card hover effects. */
+.gallery-item, .gallery-item:hover, .gallery-item:focus-visible,
+.gallery-item img, .gallery-item:hover img, .gallery-item:focus-visible img {
+  transform:none !important; box-shadow:none !important; transition:none !important;
+}
+</style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
 <body>
