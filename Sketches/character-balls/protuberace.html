@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Protuberace | Ron English Catalogue Raisonn&eacute;</title>
+<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+<style>
+/* Revision 2: audited and consolidated within existing selectors; no appended patch stylesheet. */
+
+/* Ron English Sketches & Drawings — compact owner-approved self-contained detail-page layout. */
+* {box-sizing:border-box;}
+
+html, body {margin:0;background:#fff;color:#222;}
+
+body {font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;}
+
+a {color:inherit;}
+
+.wrap {width:100%;max-width:620px;margin:0 auto;padding:16px 14px 22px;}
+
+.nav-pills, .sequence-nav {display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center;}
+
+.nav-pill {display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;text-decoration:none;font-size:12px;}
+
+.page-header {text-align:center;}
+
+.page-title, h1 {font:700 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px;font-weight:700;font-size:28px;font-family:Georgia, serif;}
+
+.original-drawing-heading, .section-card h2, .section-card h3 {font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px;}
+
+.original-drawing-heading {margin-top:12px;}
+
+.section-card, .relationship-note {display:block;box-sizing:border-box;width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center;}
+
+.gallery-grid {display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto;}
+.ron-doc-category-items {display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto;}
+
+.gallery-item {display:flex;align-items:center;justify-content:center;min-width:0;max-width:100%;background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;text-decoration:none;box-shadow:none;}
+
+.gallery-item img {display:block;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:#fff;box-shadow:none;}
+
+[data-role="original-drawing"] .gallery-grid {flex-direction:column;align-items:center;gap:12px;}
+
+[data-role="original-drawing"] .gallery-item {width:auto;max-width:410px;height:auto;max-height:none;border:0;border-radius:0;overflow:visible;}
+
+[data-role="original-drawing"] .gallery-item img {width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain;}
+
+[data-role="digital"] .gallery-grid {align-items:flex-start;gap:12px;}
+
+[data-role="digital"] .gallery-item {flex:0 0 200px;width:200px;height:200px;padding:0;border:1px solid #e5e7eb;background:#fff;max-width:200px;max-height:200px;}
+
+[data-role="digital"] .gallery-item img {width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;}
+
+.catalogue-meta-block {max-width:540px;margin:10px auto 15px;text-align:center;}
+
+.work-meta {list-style:none;padding:0;margin:0 auto;line-height:1.65;}
+
+.work-meta li {margin:2px auto;}
+
+.notes-text, .section-card p {max-width:520px;margin:8px auto;text-align:center;line-height:1.65;}
+
+.relationship-note {background:#f3f4f6;text-align:center;line-height:1.6;overflow-wrap:anywhere;}
+
+[data-role="literature"] .literature-entry {max-width:520px;margin:0 auto 16px;text-align:center;}
+
+[data-role="literature"] .literature-entry p {max-width:520px;margin:8px auto;line-height:1.65;}
+
+[data-role="literature"] .gallery-grid {gap:12px;justify-content:center;}
+
+[data-role="literature"] .gallery-item {max-width:130px;width:130px;padding:0;border-radius:12px;height:170px;max-height:170px;flex:0 0 130px;}
+
+[data-role="literature"] .gallery-item img {width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;}
+
+[data-category="artist-created-graphic-designs"] .ron-doc-category-item {width:auto;max-width:200px;min-width:0;margin:0;display:flex;flex-direction:column;align-items:center;max-height:200px;}
+
+[data-category="artist-created-graphic-designs"] .gallery-item {width:fit-content;max-width:200px;height:auto;max-height:200px;padding:6px;display:flex;align-items:center;justify-content:center;}
+
+[data-category="artist-created-graphic-designs"] .gallery-item img {display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain;}
+
+.ron-doc-category-item figcaption {max-width:200px;font-size:12px;text-align:center;overflow-wrap:anywhere;}
+
+.sequence-nav {margin:23px auto 12px;}
+
+footer, .footer {margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e2e5e8;color:#6b7280;font-size:12px;text-align:center;}
+
+@media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card,.relationship-note{padding:15px 11px}}
+@media(max-width:390px){[data-role="digital"] .gallery-item{flex-basis:200px;width:200px;height:200px}}
+</style>
+</head>
+<body><main class="wrap">
+<nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Character Balls</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav>
+<header class="page-header"><h1 class="page-title">Protuberace</h1></header>
+<h2 class="original-drawing-heading">Original Drawing</h2>
+<section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid">
+<a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/RE-016902.jpg" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/RE-016902.jpg" alt="Complete shared original sheet showing Oggle Boggle and Protuberace" loading="lazy"></a>
+<a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Protuberace.jpg" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Protuberace.jpg" alt="Isolated view of Protuberace" loading="lazy"></a>
+</div></section>
+<div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Protuberace</li><li><strong>Medium:</strong> Ink and pencil on paper</li><li><strong>Dimensions:</strong> Unknown</li><li><strong>Work ID:</strong> RE-016902</li></ul></div>
+<div class="relationship-note"><strong>Shared original sheet.</strong> This separate drawing appears on the same physical sheet as <a href="oggle-boggle.html"><em>Oggle Boggle</em></a>.</div>
+<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="oggle-boggle.html">&larr; Previous: Oggle Boggle</a><a class="nav-pill" href="trix-cereal/index.html">Next: Trix Balls &rarr;</a></nav>
+<footer>Published via GitHub Pages<br>for long-term public access.</footer>
+</main></body></html>
